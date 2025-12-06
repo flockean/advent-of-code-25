@@ -1,0 +1,94 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.11.7 (Arch Linux Java 25.0.1)
+[debug] Load.defaultLoad until apply took 166.000836ms
+[debug]                 Load.loadUnit: plugins took 113.468203ms
+[debug]                 Load.loadUnit: defsScala took 0.378626ms
+[debug] [Loading] Scanning directory /home/lucas/projects/advent-of-code-25/project/project
+[debug]                   Load.loadUnit: mkEval took 10.33331ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/lucas/projects/advent-of-code-25/project/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 27.502363 ms
+[info] loading settings for project advent-of-code-25-build-build from metals.sbt...
+[debug]                     Load.resolveProject(advent-of-code-25-build-build) took 51.490909ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id advent-of-code-25-build-build, base: /home/lucas/projects/advent-of-code-25/project/project, plugins: List(<none>))) took 89.948599ms
+[debug] [Loading] Done in /home/lucas/projects/advent-of-code-25/project/project, returning: (advent-of-code-25-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 3274.091712ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 7.618233ms
+[debug]               Load.loadUnit(file:/home/lucas/projects/advent-of-code-25/project/project/, ...) took 3408.357472ms
+[debug]             Load.apply: load took 3631.937446ms
+[debug]             Load.apply: resolveProjects took 4.724302ms
+[debug]             Load.apply: finalTransforms took 83.685596ms
+[debug]             Load.apply: config.delegates took 8.073031ms
+[debug]             Load.apply: Def.make(settings)... took 471.709682ms
+[debug]             Load.apply: structureIndex took 126.132402ms
+[debug]             Load.apply: mkStreams took 2.174078ms
+[info] loading project definition from /home/lucas/projects/advent-of-code-25/project/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 7113.745616ms
+[debug]           Load.loadUnit: defsScala took 0.00451ms
+[debug] [Loading] Scanning directory /home/lucas/projects/advent-of-code-25/project
+[debug]             Load.loadUnit: mkEval took 0.795729ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/lucas/projects/advent-of-code-25/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.68264 ms
+[info] loading settings for project advent-of-code-25-build from metals.sbt...
+[debug]               Load.resolveProject(advent-of-code-25-build) took 21.710362ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id advent-of-code-25-build, base: /home/lucas/projects/advent-of-code-25/project, plugins: List(<none>))) took 26.083025ms
+[debug] [Loading] Done in /home/lucas/projects/advent-of-code-25/project, returning: (advent-of-code-25-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 598.642979ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.496542ms
+[debug]         Load.loadUnit(file:/home/lucas/projects/advent-of-code-25/project/, ...) took 7713.782762ms
+[debug]       Load.apply: load took 7715.95812ms
+[debug]       Load.apply: resolveProjects took 0.141865ms
+[debug]       Load.apply: finalTransforms took 22.442243ms
+[debug]       Load.apply: config.delegates took 0.535549ms
+[debug]       Load.apply: Def.make(settings)... took 104.003078ms
+[debug]       Load.apply: structureIndex took 44.398424ms
+[debug]       Load.apply: mkStreams took 0.00329ms
+[info] loading project definition from /home/lucas/projects/advent-of-code-25/project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Generated .bloop/advent-of-code-25-build.json
+[success] Total time: 4 s, completed Dec 6, 2025, 1:43:31 PM
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 12228.395577ms
+[debug]     Load.loadUnit: defsScala took 0.00271ms
+[debug] [Loading] Scanning directory /home/lucas/projects/advent-of-code-25
+[debug]       Load.loadUnit: mkEval took 1.068789ms
