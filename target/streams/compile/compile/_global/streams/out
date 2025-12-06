@@ -1,0 +1,9 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/lucas/projects/advent-of-code-25/src/main/scala/Main.scala:15:13 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m    hitTotal += total / max[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue += is not a member of Int - did you mean hitTotal.!=? or perhaps hitTotal.<=?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /home/lucas/projects/advent-of-code-25/src/main/scala/Main.scala:18:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m      hitTotal += [31m1[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue += is not a member of Int - did you mean hitTotal.!=? or perhaps hitTotal.<=?[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
