@@ -1,6 +1,6 @@
 @main def hello(): Unit =
   println("Hello Advent of Code!")
-  daytwo.main()
+  daythree.main()
 
 object dayone{
   var dial: Int = 50
@@ -108,13 +108,41 @@ object daytwo{
   }
 }
 
+object daythree{
+  var foundNumbers: List[Int] = List()
+  var sumOfFoundNumbers: Int = 0
+
+  def indentifyJolt(bank: String): Int = {
+    var maxBankNum: Int = (bank.charAt(0).toString + bank.charAt(1).toString).toInt
+
+    for (bankNum <- 0 to (bank.length - 1)) {
+      for (compareNum <- (bankNum + 1) to (bank.length - 1)) {
+        val combinedNum: Int = (bank.charAt(bankNum).toString + bank.charAt(compareNum).toString).toInt
+        if (combinedNum >= maxBankNum) {
+          maxBankNum = combinedNum
+        }
+      }
+    }
+    maxBankNum
+  }
+
+  def main(): Unit = {
+    for (line <- readDocument.lines) {
+      var identifiedJolt = indentifyJolt(line)
+      foundNumbers = foundNumbers :+ identifiedJolt
+    }
+    println(foundNumbers)
+    println(foundNumbers.sum)
+  }
+}
+
 
 object readDocument{
   // Read lines
-  // val lines = scala.io.Source.fromFile("input.txt").getLines.toList
+  val lines = scala.io.Source.fromFile("input.txt").getLines.toList
 
   // Read line comma separated
-  val lines = scala.io.Source.fromFile("input.txt").getLines().next().split(",").toList
+  // val lines = scala.io.Source.fromFile("input.txt").getLines().next().split(",").toList
 
 }
 
