@@ -3,10 +3,11 @@ import day2.daytwo
 import day3.daythree
 import day4.dayfour
 import day5.dayfive
+import day6.daysix
 
 @main def hello(): Unit =
   println("Hello Advent of Code!")
-  dayfive.main()
+  daysix.main()
 
   
 
